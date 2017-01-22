@@ -1,0 +1,233 @@
+{
+	"Name" : "Level1",
+	"Size" : [1920,1080],
+	"NbrPlayer" : 1,
+	"DefaultPlayerPath" : "Data/Character/defenseLine.json",
+	"Physics" : false,
+	"Backgrounds" : [
+		{
+			"Path" : "Data/Background/filter.png",
+			"Position" : [-10.0, -10.0],
+			"BackgroundLevel" : 10
+		},
+		{
+			"Path" : "Data/Environment/BG_Left_Door.png",
+			"Position" : [-1010.0, -10.0],
+			"BackgroundLevel" : 0,
+			"Commands" : [
+				{
+					"Command" : "Shake",
+					"Timer" : 1.0
+				},
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [50.0, 0],
+					"Timer" : 2.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 3.0
+				},
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [100.0, 0],
+					"Timer" : 5.0
+				},
+				
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [100.0, 0],
+					"Timer" : 6.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 5.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 6.0
+				},
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [150.0, 0],
+					"Timer" : 7.0
+				},
+				
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [100.0, 0],
+					"Timer" : 8.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 7.0
+				}
+			]
+		},
+		{
+			"Path" : "Data/Environment/BG_Right_Door.png",
+			"Position" : [1420.0, -10.0],
+			"BackgroundLevel" : 0,
+			"Commands" : [
+				{
+					"Command" : "Shake",
+					"Timer" : 1.0
+				},
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [-50.0, 0],
+					"Timer" : 2.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 3.0
+				},
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [-100.0, 0],
+					"Timer" : 5.0
+				},
+				
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [-100.0, 0],
+					"Timer" : 6.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 5.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 6.0
+				},
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [-150.0, 0],
+					"Timer" : 7.0
+				},
+				
+				{
+					"Command" : "MoveSprite",
+					"Motion" : [-100.0, 0],
+					"Timer" : 8.0
+				},
+				{
+					"Command" : "Shake",
+					"Timer" : 7.0
+				}
+			]
+		}
+	],
+	"Entitys" : [
+		{
+			"Path" : "Data/Character/core.json"
+		}
+	],
+	"Commands" : [
+		{
+			"Command" : "Spawn",
+			"Path" : "Data/Character/BlueTriangle.json",
+			"SpawnRegion" : [-144, -144, 2064, 72],
+			"Timers" : [4.0, 16.0, 24.5, 26.0, 34.2, 36.4, 39.0, 42.5, 45.0, 47.0, 50.0, 53.0, 53.5, 54.0, 58.0, 58.5, 62.0, 65.0, 66.6, 70.0, 75.0, 75.5, 76.0, 76.5, 77.0, 77.5]
+		},
+		{
+			"Command" : "Spawn",
+			"Path" : "Data/Character/RedSinus.json",
+			"SpawnRegion" : [-144, -144, 72, 1224],
+			"Timers" : [12.0, 18.0, 27.0, 33.3, 40.0, 41.0, 45.5, 47.0, 47.5, 50.0, 52.0, 54.0, 57.5, 59.0, 63.0, 63.5, 66.6, 70.0, 75.0, 75.5, 76.0, 76.5, 77.0, 77.5]
+		},
+		{
+			"Command" : "Spawn",
+			"Path" : "Data/Character/GreenSpike.json",
+			"SpawnRegion" : [-144, 1080, 2064, 72],
+			"Timers" : [8.0, 20.0, 28.0, 34.0, 37.0, 37.6, 39.5, 44.0, 45,3, 50.0, 55.0, 55.5, 56.0, 56.5, 60.0, 61.0, 64.0, 66.6, 68.0, 70.0, 75.0, 75.5, 76.0, 76.5, 77.0, 77.5]
+		},
+		{
+			"Command": "Spawn",
+			"Path": "Data/Character/BlueTriangle.json",
+			"SpawnRegion": [ 1920, -144, 72, 1224 ],
+			"Timers": [18.0, 21.0, 30.0, 35.0, 43.0, 46.0, 47.0, 48.0, 50.0, 54.5, 55.0, 57.0, 57.5, 63.2, 64,0, 65.8, 66.6, 70.0, 75.0, 75.5, 76.0, 76.5, 77.0, 77.5]
+		},
+		{
+			"Command": "Spawn",
+			"Path": "Data/Character/RedSinus.json",
+			"SpawnRegion": [ 1920, -144, 72, 1224 ],
+			"Timers": [20.0, 22.5, 31.5, 33.5, 42.0, 43.0, 47.0, 48.0, 49.0, 50.0, 53.5, 54.3, 55.5, 56.0, 62.0, 63.0, 66.6, 68.0, 70.0, 75.0, 75.5, 76.0, 76.5, 77.0, 77.5]
+		},
+		{
+			"Command" : "Spawn",
+			"Path" : "Data/Character/GreenSpike.json",
+			"SpawnRegion" : [-144, -144, 2064, 72],
+			"Timers" : [22.0, 25.0, 32.0, 41.0, 42.0, 46.0, 48.0, 51.0, 51.5, 55.5, 59.5, 63.2, 64.5, 66.6, 68.5, 70.0, 75.0, 75.5, 76.0, 76.5, 77.0, 77.5]
+		}
+	],
+	"Musics" : [
+		{
+			"Path" : ["Data/Sound/Ambiant/Drum/Drum_Layer_1_Start_Map.ogg"],
+			"Volume" : 100.0,
+			"Layer" : 0
+		},
+		{
+			"Path" : ["Data/Sound/Ambiant/Drum/Drum_Layer_2.ogg"],
+			"Volume" : 0.0,
+			"Layer" : 1
+		},
+		{
+			"Path" :
+			[
+				"Data/Sound/Ambiant/Bass/Bass_Layer_1.ogg",
+				"Data/Sound/Ambiant/Bass/Bass_Layer_2.ogg",
+				"Data/Sound/Ambiant/Bass/Bass_Layer_3.ogg",
+				"Data/Sound/Ambiant/Bass/Bass_Layer_4.ogg"
+			],
+			"Volume" : 0.0,
+			"Layer" : 2
+		},
+		{
+			"Path" : 
+			[
+				"Data/Sound/Ambiant/Clavier/Clavier_Layer_1.ogg",
+				"Data/Sound/Ambiant/Clavier/Clavier_Layer_2.ogg",
+				"Data/Sound/Ambiant/Clavier/Clavier_Layer_3.ogg",
+				"Data/Sound/Ambiant/Clavier/Clavier_Layer_4.ogg"
+			],
+			"Volume" : 0.0,
+			"Layer" : 3
+		},
+		{
+			"Path" : 
+			[
+				"Data/Sound/Ambiant/Synth/Synth_Layer_1.ogg",
+				"Data/Sound/Ambiant/Synth/Synth_Layer_2.ogg",
+				"Data/Sound/Ambiant/Synth/Synth_Layer_3.ogg",
+				"Data/Sound/Ambiant/Synth/Synth_Layer_4.ogg"
+			],
+			"Volume" : 0.0,
+			"Layer" : 4
+		}
+	],
+	"Inputs" : [
+		{
+			"Button" : "padStart",
+			"Command" : "LoadLevel",
+			"Path" : "Data/Level/mainMenu.json"
+		},
+		{
+			"Button" : "padButtonB",
+			"Command" : "ShootRed"
+		},
+		{
+			"Button" : "padButtonX",
+			"Command" : "ShootBlue"
+		},
+		{
+			"Button" : "padButtonY",
+			"Command" : ""
+		},
+		{
+			"Button" : "padButtonA",
+			"Command" : "ShootGreen"
+		}
+	]
+}

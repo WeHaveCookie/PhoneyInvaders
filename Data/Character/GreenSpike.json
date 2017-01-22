@@ -1,0 +1,52 @@
+{
+	"Name" : "GreenSpike",
+	"Width" : 68,
+	"Height" : 68,
+	"Speed" : 10.0,
+	"Scale" : [1.0, 1.0],
+	"Position" : [400.0, 500.0],
+	"State" : "LEFT",	
+	"Type" : "Movable",
+	"Target" : "Core",
+	"Element" : "Spike",
+	"BackgroundLevel" : 10,
+	"Animated" : true,
+	"Animations" : [
+		{
+			"State" : "LEFT",
+			"Frame" : 4,
+			"Line" : 1,
+			"Time" : 0.1
+		},
+		{
+			"State" : "RIGHT",
+			"Frame" : 4,
+			"Line" : 2,
+			"Time" : 0.1
+		},
+		{
+			"State" : "DEAD",
+			"Frame" : 4,
+			"Line" : 3,
+			"Time" : 0.2,
+			"Commands" : [
+				{
+					"Command" : "Sound",
+					"Path" : [
+						"Data/Sound/FX/SFX_Monster_Die/SFX_Monster_DIE_2_1.ogg",
+						"Data/Sound/FX/SFX_Monster_Die/SFX_Monster_DIE_2_2.ogg",
+						"Data/Sound/FX/SFX_Monster_Die/SFX_Monster_DIE_2_3.ogg",
+						"Data/Sound/FX/SFX_Monster_Die/SFX_Monster_DIE_2_4.ogg"
+						],
+					"StartFrame" : 1,
+					"EndFrame" : 1
+				},
+				{
+					"Command" : "Shake",
+					"StartFrame" : 1,
+					"EndFrame" : 1
+				}
+			]
+		}
+	]
+}

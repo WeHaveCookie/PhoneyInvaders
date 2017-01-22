@@ -1,0 +1,62 @@
+{
+	"Name" : "mainMenu",
+	"Size" : [1920,1080],
+	"Backgrounds" : [
+		{
+			"Path" : "Data/Background/Splash.png",
+			"BackgroundLevel" : 0
+		},
+		{
+			"Path" : "Data/Background/Title.png",
+			"BackgroundLevel" : 1,
+			"Position" : [1250.0, 100.0]
+		}
+	],
+	"Entitys" : [
+		{
+			"Path" : "Data/Gui/start.json",
+			"Position" : [[1400.0, 400.0]],
+			"OnClick" : [
+				{
+					"Command" : "LoadLevel",
+					"Path" : "Data/Level/howToPlay.json"
+				}
+			]
+		},
+		{
+			"Path" : "Data/Gui/credits.json",
+			"Position" : [[1400.0, 600.0]],
+			"OnClick" : [
+				{
+					"Command" : "LoadLevel",
+					"Path" : "Data/Level/credits.json"
+				}
+			]
+		},
+		{
+			"Path" : "Data/Gui/exit.json",
+			"Position" : [[1400.0, 800.0]],
+			"OnClick" : [
+				{
+					"Command" : "Exit"
+				}
+			]
+		}
+	],
+	"Inputs" : [
+		{
+			"Button" : "padButtonA",
+			"Command" : "LoadLevel",
+			"Path" : "Data/Level/howToPlay.json"
+		},
+		{
+			"Button" : "padButtonB",
+			"Command" : "Exit"
+		},
+		{
+			"Button" : "padButtonX",
+			"Command" : "LoadLevel",
+			"Path" : "Data/Level/credits.json"
+		}
+	]
+}

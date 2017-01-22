@@ -1,0 +1,80 @@
+{
+	"Name" : "HowToPlay",
+	"Size" : [1920,1080],
+	"NbrPlayer" : 1,
+	"DefaultPlayerPath" : "Data/Character/defenseLine.json",
+	"Backgrounds" : [
+		{
+			"Path" : "Data/Background/Closed_Doors_Instructions.png",
+			"BackgroundLevel" : 0
+		}
+	],
+	"Entitys" : [
+		{
+			"Path" : "Data/Character/RedSinus.json",
+			"Position" : [[600.0, 740.0]],
+			"Type" : "Anchor"
+		},
+		{
+			"Path" : "Data/Character/GreenSpike.json",
+			"Position" : [[600.0, 820.0]],
+			"Type" : "Anchor"
+		},
+		{
+			"Path" : "Data/Character/BlueTriangle.json",
+			"Position" : [[600.0, 670.0]],
+			"Type" : "Anchor"
+		},
+		{
+			"Path" : "Data/Character/core.json"
+		},
+		{
+			"Path" : "Data/Gui/start.json",
+			"Position" : [[832.0, 800.0]],
+			"OnClick" : [
+				{
+					"Command" : "LoadLevel",
+					"Path" : "Data/Level/level1.json"
+				}
+			]
+		},
+		{
+			"Path" : "Data/Gui/exit.json",
+			"Position" : [[832.0, 900.0]],
+			"OnClick" : [
+				{
+					"Command" : "Exit"
+				}
+			]
+		},
+		{
+			"Path" : "Data/Gui/buttonY.json",
+			"Position" : [[845.0, 825.0]],
+			"Type" : "Anchor"
+		}
+	],
+	"Inputs" : [
+		{
+			"Button" : "padButtonY",
+			"Command" : "LoadLevel",
+			"Path" : "Data/Level/level1.json"
+		},
+		{
+			"Button" : "padButtonB",
+			"Command" : "ShootRed"
+		},
+		{
+			"Button" : "padButtonX",
+			"Command" : "ShootBlue"
+		},
+		{
+			"Button" : "padButtonA",
+			"Command" : "ShootGreen"
+		},
+		{
+			"Button" : "padStart",
+			"Command" : "LoadLevel",
+			"Path" : "Data/Level/mainMenu.json"
+		}
+	]
+}

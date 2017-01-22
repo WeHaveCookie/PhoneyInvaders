@@ -1,0 +1,18 @@
+{
+	"Name" : "defenseLine",
+	"Width" : 250,
+	"Height" : 250,
+	"Speed" : 1.0,
+	"Scale" : [1.0, 1.0],
+	"Layout" : "Center",
+	"State" : "IDLE",
+	"BackgroundLevel" : 10,
+	"Animations" : [
+		{
+			"State" : "IDLE",
+			"Frame" : 1,
+			"Line" : 1,
+			"Time" : 0.0
+		}
+	]
+}

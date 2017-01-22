@@ -1,0 +1,19 @@
+{
+	"Name" : "buttonY",
+	"Width" : 40,
+	"Height" : 40,
+	"Speed" : 1.0,
+	"Position" : [960.0, 466.0],
+	"Scale" : [0.5, 0.5],
+	"State" : "IDLE",
+	"Collidable" : false,
+	"BackgroundLevel" : 11,
+	"Animations" : [
+		{
+			"State" : "IDLE",
+			"Frame" : 1,
+			"Line" : 1,
+			"Time" : 0.0
+		}
+	]
+}

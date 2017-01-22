@@ -1,0 +1,42 @@
+{
+	"Name" : "credits",
+	"Size" : [1920,1080],
+	"Backgrounds" : [
+		{
+			"Path" : "Data/Background/Credits.png",
+			"BackgroundLevel" : 0
+		}
+	],
+	"Entitys" : [
+		{
+			"Path" : "Data/Gui/start.json",
+			"Position" : [[832.0, 800.0]],
+			"OnClick" : [
+				{
+					"Command" : "LoadLevel",
+					"Path" : "Data/Level/howToPlay.json"
+				}
+			]
+		},
+		{
+			"Path" : "Data/Gui/exit.json",
+			"Position" : [[832.0, 900.0]],
+			"OnClick" : [
+				{
+					"Command" : "Exit"
+				}
+			]
+		}
+	],
+	"Inputs" : [
+		{
+			"Button" : "padButtonA",
+			"Command" : "LoadLevel",
+			"Path" : "Data/Level/howToPlay.json"
+		},
+		{
+			"Button" : "padButtonB",
+			"Command" : "Exit"
+		}
+	]
+}

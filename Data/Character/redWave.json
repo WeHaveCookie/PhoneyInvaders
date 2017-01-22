@@ -1,0 +1,21 @@
+{
+	"Name" : "redWave",
+	"Width" : 256,
+	"Height" : 256,
+	"Speed" : 1.0,
+	"MaxSpeed" : 10.0,
+	"Scale" : [1.0, 1.0],
+	"Layout" : "Center",
+	"State" : "IDLE",	
+	"Type" : "Projectile",
+	"Animated" : true,
+	"Sound" : "Data/Sound/FX/SFX_Monster_Attaque/SFX_Monster_Triangle_Attaque_1_3.ogg",
+	"Animations" : [
+		{
+			"State" : "IDLE",
+			"Frame" : 4,
+			"Line" : 1,
+			"Time" : 0.2
+		}
+	]
+}
