@@ -266,11 +266,11 @@ void InputMgr::Key::executeCommand(uint32_t id)
 				if (m_hasValue)
 				{
 					float value = m_value * 0.1f;
-					m_command->init(gameMgr->getEntityPlayer(id), (void*)&value);
+					m_command->init(gameMgr->getEntityPlayer(), (void*)&value);
 				}
 				else
 				{
-					m_command->init(gameMgr->getEntityPlayer(id));
+					m_command->init(gameMgr->getEntityPlayer());
 				}
 				CommandMgr::getSingleton()->addCommand(m_command);
 			}
