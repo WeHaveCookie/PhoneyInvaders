@@ -215,19 +215,19 @@
 		},
 		{
 			"Button" : "padButtonB",
-			"Command" : ""
+			"Command" : "ShootRed"
 		},
 		{
 			"Button" : "padButtonX",
-			"Command" : ""
+			"Command" : "ShootBlue"
+		},
+		{
+			"Button" : "padButtonA",
+			"Command" : "ShootGreen"
 		},
 		{
 			"Button" : "padButtonY",
 			"Command" : ""
-		},
-		{
-			"Button" : "padButtonA",
-			"Command" : "Shoot"
 		}
 	]
 }
